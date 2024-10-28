@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王扬春的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>王扬春的个人网站</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carousel">
+            <div class="carousel-container">
+                <img src="imgs/5C873439-4BB3-4AD2-8435-1EC296D53410_1_105_c.jpeg" alt="个人照片1">
+                <img src="imgs/70815CFB-A499-4DCF-8F2C-DA99ABAE66DD_1_105_c.jpeg" alt="个人照片2">
+            </div>
+            <button class="carousel-button prev">&lt;</button>
+            <button class="carousel-button next">&gt;</button>
+            <p class="image-description">个人照片1</p>
+        </section>
+
+        <section id="about">
+            <h2>个人简介</h2>
+            <p>王扬春，设计师，热爱旅行、摄影。专注于用户体验设计，致力于创造简洁而有力的视觉作品。</p>
+        </section>
+
+        <section id="social">
+            <a href="#" class="social-icon" title="微信"><i class="icon-wechat"></i></a>
+            <a href="#" class="social-icon" title="微博"><i class="icon-weibo"></i></a>
+            <a href="#" class="social-icon" title="QQ"><i class="icon-qq"></i></a>
+            <a href="#" class="social-icon" title="GitHub"><i class="icon-github"></i></a>
+        </section>
+    </main>
+
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <h3>AI助手</h3>
+            <button id="close-chat" class="close-button">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="输入你的问题...">
+            <button id="send-message">发送</button>
+        </div>
+    </div>
+
+    <button id="open-chat" class="open-chat-button">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <footer>
+        <p>版权所有 © 王扬春的个人网站 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
